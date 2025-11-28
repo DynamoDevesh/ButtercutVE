@@ -1,0 +1,36 @@
+Running ffmpeg command:
+ffmpeg -y -i jobs/b492264c-12f2-4b28-8cdd-61478569d2f9/A-roll.mp4 -filter_complex 'drawtext=text='"'"'Hello Buttercut'"'"':x=100:y=100:fontsize=24:fontcolor=white:box=1:boxcolor=black@0.5:boxborderw=10:enable='"'"'between(t,0,5)'"'"'' -map '[0:v]' -map '0:a?' -c:v libx264 -preset fast -c:a copy jobs/b492264c-12f2-4b28-8cdd-61478569d2f9/rendered.mp4
+
+--- STDOUT ---
+
+--- STDERR ---
+ffmpeg version 8.0.1 Copyright (c) 2000-2025 the FFmpeg developers
+  built with Apple clang version 17.0.0 (clang-1700.4.4.1)
+  configuration: --prefix=/opt/homebrew/Cellar/ffmpeg/8.0.1 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags= --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libaribb24 --enable-libbluray --enable-libdav1d --enable-libharfbuzz --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librav1e --enable-librist --enable-librubberband --enable-libsnappy --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtesseract --enable-libtheora --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libspeex --enable-libsoxr --enable-libzmq --enable-libzimg --disable-libjack --disable-indev=jack --enable-videotoolbox --enable-audiotoolbox --enable-neon
+  libavutil      60.  8.100 / 60.  8.100
+  libavcodec     62. 11.100 / 62. 11.100
+  libavformat    62.  3.100 / 62.  3.100
+  libavdevice    62.  1.100 / 62.  1.100
+  libavfilter    11.  4.100 / 11.  4.100
+  libswscale      9.  1.100 /  9.  1.100
+  libswresample   6.  1.100 /  6.  1.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'jobs/b492264c-12f2-4b28-8cdd-61478569d2f9/A-roll.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 1
+    compatible_brands: isommp41mp42
+    creation_time   : 2025-05-30T08:42:13.000000Z
+  Duration: 00:00:31.13, start: 0.000000, bitrate: 9437 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1080x1920, 9181 kb/s, 30 fps, 30 tbr, 600 tbn (default)
+    Metadata:
+      creation_time   : 2025-05-30T08:42:13.000000Z
+      handler_name    : Core Media Video
+      vendor_id       : [0][0][0][0]
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 251 kb/s (default)
+    Metadata:
+      creation_time   : 2025-05-30T08:42:13.000000Z
+      handler_name    : Core Media Audio
+      vendor_id       : [0][0][0][0]
+[out#0/mp4 @ 0x8070203c0] Output with label '0:v' does not exist in any defined filter graph, or was already used elsewhere.
+Error opening output file jobs/b492264c-12f2-4b28-8cdd-61478569d2f9/rendered.mp4.
+Error opening output files: Invalid argument

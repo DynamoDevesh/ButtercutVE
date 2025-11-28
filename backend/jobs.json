@@ -1,0 +1,16 @@
+{
+  "c9730142-6501-41ac-bd2c-3d9ecd3a5820": {
+    "status": "done",
+    "progress": 100,
+    "video": "jobs/c9730142-6501-41ac-bd2c-3d9ecd3a5820/B-roll_1.mp4",
+    "out": "jobs/c9730142-6501-41ac-bd2c-3d9ecd3a5820/rendered.mp4",
+    "msg": "render complete (manually restored)"
+  },
+  "a865eefc-8303-46fd-b57c-b208179ded49": {
+    "status": "done",
+    "progress": 100,
+    "video": "jobs/a865eefc-8303-46fd-b57c-b208179ded49/A-roll.mp4",
+    "out": "jobs/a865eefc-8303-46fd-b57c-b208179ded49/rendered.mp4",
+    "msg": "render complete"
+  }
+}
