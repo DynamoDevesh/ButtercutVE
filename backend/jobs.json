@@ -12,5 +12,132 @@
     "video": "jobs/a865eefc-8303-46fd-b57c-b208179ded49/A-roll.mp4",
     "out": "jobs/a865eefc-8303-46fd-b57c-b208179ded49/rendered.mp4",
     "msg": "render complete"
+  },
+  "235a6b85-d179-44b8-a011-25110bfdae99": {
+    "status": "error",
+    "progress": 0,
+    "video": "jobs/235a6b85-d179-44b8-a011-25110bfdae99/77014.mp4",
+    "out": "jobs/235a6b85-d179-44b8-a011-25110bfdae99/rendered.mp4",
+    "saved_files": [
+      "jobs/235a6b85-d179-44b8-a011-25110bfdae99/77014.mp4",
+      "jobs/235a6b85-d179-44b8-a011-25110bfdae99/overlay_img_1764389054586_1.jpeg"
+    ],
+    "msg": "ffmpeg returned 234; see ffmpeg_background.log\nffmpeg version 8.0.1 Copyright (c) 2000-2025 the FFmpeg developers\n  built with Apple clang version 17.0.0 (clang-1700.4.4.1)\n  configuration: --prefix=/opt/homebrew/Cellar/ffmpeg/8.0.1 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags= --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libaribb24 --enable-libbluray --enable-libdav1d --enable-libharfbuzz --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librav1e --enable-librist --enable-librubberband --enable-libsnappy --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtesseract --enable-libtheora --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libspeex --enable-libsoxr --enable-libzmq --enable-libzimg --disable-libjack --disable-indev=jack --enable-videotoolbox --enable-audiotoolbox --enable-neon\n  libavutil      60.  8.100 / 60.  8.100\n  libavcodec     62. 11.100 / 62. 11.100\n  libavformat    62.  3.100 / 62.  3.100\n  libavdevice    62.  1.100 / 62.  1.100\n  libavfilter    11.  4.100 / 11.  4.100\n  libswscale      9.  1.100 /  9.  1.100\n  libswresample   6.  1.100 /  6.  1.100\nInput #0, mov,mp4,m4a,3gp,3g2,mj2, from 'jobs/235a6b85-d179-44b8-a011-25110bfdae99/77014.mp4':\n  Metadata:\n    major_brand     : mp42\n    minor_version   : 0\n    compatible_brands: mp42isom\n  Duration: 00:00:20.35, start: 0.000000, bitrate: 1624 kb/s\n  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 478x850, 1494 kb/s, 30 fps, 30 tbr, 90k tbn (default)\n    Metadata:\n      vendor_id       : [0][0][0][0]\n  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 128 kb/s (default)\n    Metadata:\n      vendor_id       : [0][0][0][0]\nInput #1, image2, from 'jobs/235a6b85-d179-44b8-a011-25110bfdae99/overlay_img_1764389054586_1.jpeg':\n  Duration: 00:00:00.04, start: 0.000000, bitrate: 28436 kb/s\n  Stream #1:0: Video: mjpeg (Baseline), yuvj420p(pc, bt470bg/unknown/unknown), 1280x720 [SAR 96:96 DAR 16:9], 25 fps, 25 tbr, 25 tbn\n[fc#0 @ 0x7acc40000] Cannot find an unused video input stream to feed the unlabeled input pad drawtext:default.\nError binding filtergraph inputs/outputs: Invalid argument\n"
+  },
+  "ad32d1b4-1a32-4f43-8654-19b73cb8c485": {
+    "status": "done",
+    "progress": 100,
+    "video": "jobs/ad32d1b4-1a32-4f43-8654-19b73cb8c485/77014.mp4",
+    "out": "jobs/ad32d1b4-1a32-4f43-8654-19b73cb8c485/rendered.mp4",
+    "saved_files": [
+      "jobs/ad32d1b4-1a32-4f43-8654-19b73cb8c485/77014.mp4",
+      "jobs/ad32d1b4-1a32-4f43-8654-19b73cb8c485/overlay_img_1764389322937_1.jpeg"
+    ],
+    "msg": "render complete"
+  },
+  "375d6518-53ca-4e85-874b-87eb9912a983": {
+    "status": "done",
+    "progress": 100,
+    "video": "jobs/375d6518-53ca-4e85-874b-87eb9912a983/77014.mp4",
+    "out": "jobs/375d6518-53ca-4e85-874b-87eb9912a983/rendered.mp4",
+    "saved_files": [
+      "jobs/375d6518-53ca-4e85-874b-87eb9912a983/77014.mp4",
+      "jobs/375d6518-53ca-4e85-874b-87eb9912a983/overlay_1764389784021_1.jpeg",
+      "jobs/375d6518-53ca-4e85-874b-87eb9912a983/overlay_1764389784021_2.mp4",
+      "jobs/375d6518-53ca-4e85-874b-87eb9912a983/overlay_1764389784021_3.jpeg"
+    ],
+    "msg": "render complete"
+  },
+  "1b1063e4-388d-4d38-af15-7bbe6e0ac121": {
+    "status": "done",
+    "progress": 100,
+    "video": "jobs/1b1063e4-388d-4d38-af15-7bbe6e0ac121/77014.mp4",
+    "out": "jobs/1b1063e4-388d-4d38-af15-7bbe6e0ac121/rendered.mp4",
+    "saved_files": [
+      "jobs/1b1063e4-388d-4d38-af15-7bbe6e0ac121/77014.mp4",
+      "jobs/1b1063e4-388d-4d38-af15-7bbe6e0ac121/overlay_1764389853188_1.jpeg",
+      "jobs/1b1063e4-388d-4d38-af15-7bbe6e0ac121/overlay_1764389853188_2.mp4",
+      "jobs/1b1063e4-388d-4d38-af15-7bbe6e0ac121/overlay_1764389853188_3.jpeg"
+    ],
+    "msg": "render complete"
+  },
+  "62eb8299-c2ac-427f-a4bd-25321fd4b8ef": {
+    "status": "done",
+    "progress": 100,
+    "video": "jobs/62eb8299-c2ac-427f-a4bd-25321fd4b8ef/77014.mp4",
+    "out": "jobs/62eb8299-c2ac-427f-a4bd-25321fd4b8ef/rendered.mp4",
+    "saved_files": [
+      "jobs/62eb8299-c2ac-427f-a4bd-25321fd4b8ef/77014.mp4",
+      "jobs/62eb8299-c2ac-427f-a4bd-25321fd4b8ef/overlay_1764389855382_1.jpeg",
+      "jobs/62eb8299-c2ac-427f-a4bd-25321fd4b8ef/overlay_1764389855382_2.mp4",
+      "jobs/62eb8299-c2ac-427f-a4bd-25321fd4b8ef/overlay_1764389855382_3.jpeg"
+    ],
+    "msg": "render complete"
+  },
+  "b91f35b6-5e27-486c-832f-4768d2d1bb91": {
+    "status": "done",
+    "progress": 100,
+    "video": "jobs/b91f35b6-5e27-486c-832f-4768d2d1bb91/77612.mp4",
+    "out": "jobs/b91f35b6-5e27-486c-832f-4768d2d1bb91/rendered.mp4",
+    "saved_files": [
+      "jobs/b91f35b6-5e27-486c-832f-4768d2d1bb91/77612.mp4",
+      "jobs/b91f35b6-5e27-486c-832f-4768d2d1bb91/overlay_1764390561509_1.png",
+      "jobs/b91f35b6-5e27-486c-832f-4768d2d1bb91/overlay_1764390561509_2.mp4",
+      "jobs/b91f35b6-5e27-486c-832f-4768d2d1bb91/overlay_1764390561509_3.mp4"
+    ],
+    "msg": "render complete"
+  },
+  "020592f4-6dfe-412f-8dfc-48271ad8c182": {
+    "status": "done",
+    "progress": 100,
+    "video": "jobs/020592f4-6dfe-412f-8dfc-48271ad8c182/77612.mp4",
+    "out": "jobs/020592f4-6dfe-412f-8dfc-48271ad8c182/rendered.mp4",
+    "saved_files": [
+      "jobs/020592f4-6dfe-412f-8dfc-48271ad8c182/77612.mp4",
+      "jobs/020592f4-6dfe-412f-8dfc-48271ad8c182/overlay_1764390565165_1.png",
+      "jobs/020592f4-6dfe-412f-8dfc-48271ad8c182/overlay_1764390565165_2.mp4",
+      "jobs/020592f4-6dfe-412f-8dfc-48271ad8c182/overlay_1764390565165_3.mp4"
+    ],
+    "msg": "render complete"
+  },
+  "24928f0c-28f4-4a37-a73f-249a0a00caba": {
+    "status": "done",
+    "progress": 100,
+    "video": "jobs/24928f0c-28f4-4a37-a73f-249a0a00caba/77612.mp4",
+    "out": "jobs/24928f0c-28f4-4a37-a73f-249a0a00caba/rendered.mp4",
+    "saved_files": [
+      "jobs/24928f0c-28f4-4a37-a73f-249a0a00caba/77612.mp4",
+      "jobs/24928f0c-28f4-4a37-a73f-249a0a00caba/overlay_1764390627935_1.png",
+      "jobs/24928f0c-28f4-4a37-a73f-249a0a00caba/overlay_1764390627935_2.mp4",
+      "jobs/24928f0c-28f4-4a37-a73f-249a0a00caba/overlay_1764390627935_3.mp4"
+    ],
+    "msg": "render complete"
+  },
+  "3e2839d1-f28d-428f-af72-54c6bcbdbc05": {
+    "status": "done",
+    "progress": 100,
+    "video": "jobs/3e2839d1-f28d-428f-af72-54c6bcbdbc05/77612.mp4",
+    "out": "jobs/3e2839d1-f28d-428f-af72-54c6bcbdbc05/rendered.mp4",
+    "saved_files": [
+      "jobs/3e2839d1-f28d-428f-af72-54c6bcbdbc05/77612.mp4",
+      "jobs/3e2839d1-f28d-428f-af72-54c6bcbdbc05/overlay_1764390974290_1.png",
+      "jobs/3e2839d1-f28d-428f-af72-54c6bcbdbc05/overlay_1764390974290_2.mp4",
+      "jobs/3e2839d1-f28d-428f-af72-54c6bcbdbc05/overlay_1764390974290_3.mp4"
+    ],
+    "msg": "render complete"
+  },
+  "be2e2685-16c5-44d0-9649-ed3ed78bb2eb": {
+    "status": "done",
+    "progress": 100,
+    "video": "jobs/be2e2685-16c5-44d0-9649-ed3ed78bb2eb/77612.mp4",
+    "out": "jobs/be2e2685-16c5-44d0-9649-ed3ed78bb2eb/rendered.mp4",
+    "saved_files": [
+      "jobs/be2e2685-16c5-44d0-9649-ed3ed78bb2eb/77612.mp4",
+      "jobs/be2e2685-16c5-44d0-9649-ed3ed78bb2eb/overlay_1764391169829_1.mp4",
+      "jobs/be2e2685-16c5-44d0-9649-ed3ed78bb2eb/overlay_1764391169829_2.png",
+      "jobs/be2e2685-16c5-44d0-9649-ed3ed78bb2eb/overlay_1764391169829_3.mp4",
+      "jobs/be2e2685-16c5-44d0-9649-ed3ed78bb2eb/overlay_1764391169829_4.mp4"
+    ],
+    "msg": "render complete"
   }
 }

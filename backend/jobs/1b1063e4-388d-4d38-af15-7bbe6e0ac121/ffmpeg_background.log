@@ -1,0 +1,115 @@
+Running ffmpeg command:
+ffmpeg -y -i jobs/1b1063e4-388d-4d38-af15-7bbe6e0ac121/77014.mp4 -i jobs/1b1063e4-388d-4d38-af15-7bbe6e0ac121/overlay_1764389853188_1.jpeg -i jobs/1b1063e4-388d-4d38-af15-7bbe6e0ac121/overlay_1764389853188_2.mp4 -i jobs/1b1063e4-388d-4d38-af15-7bbe6e0ac121/overlay_1764389853188_3.jpeg -filter_complex '[0:v]drawtext=text='"'"'Hello'"'"':x=34:y=232:fontsize=28:fontcolor=white:box=1:boxcolor=black@0.5:boxborderw=10:enable='"'"'between(t,0,3)'"'"'[txttxt_1764389740374_535]; [txttxt_1764389740374_535]drawtext=text='"'"'Hello'"'"':x=40:y=200:fontsize=28:fontcolor=white:box=1:boxcolor=black@0.5:boxborderw=10:enable='"'"'between(t,0,3)'"'"'[txttxt_1764389763048_849]; [txttxt_1764389763048_849]drawtext=text='"'"'Hello'"'"':x=114:y=79:fontsize=28:fontcolor=white:box=1:boxcolor=black@0.5:boxborderw=10:enable='"'"'between(t,0,3)'"'"'[txttxt_1764389765505_560]; [1:v]scale=120:120[ov1]; [txttxt_1764389765505_560][ov1]overlay=27:61:enable='"'"'between(t,0,3)'"'"'[tmp1]; [2:v]scale=160:120[ov2]; [tmp1][ov2]overlay=28:284:enable='"'"'between(t,0,3)'"'"'[tmp2]; [3:v]scale=120:120[ov3]; [tmp2][ov3]overlay=221:-50:enable='"'"'between(t,0,3)'"'"'[tmp3]' -map '[tmp3]' -map '0:a?' -c:v libx264 -preset fast -c:a copy jobs/1b1063e4-388d-4d38-af15-7bbe6e0ac121/rendered.mp4
+
+--- STDOUT ---
+
+--- STDERR ---
+ffmpeg version 8.0.1 Copyright (c) 2000-2025 the FFmpeg developers
+  built with Apple clang version 17.0.0 (clang-1700.4.4.1)
+  configuration: --prefix=/opt/homebrew/Cellar/ffmpeg/8.0.1 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags= --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libaribb24 --enable-libbluray --enable-libdav1d --enable-libharfbuzz --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librav1e --enable-librist --enable-librubberband --enable-libsnappy --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtesseract --enable-libtheora --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libspeex --enable-libsoxr --enable-libzmq --enable-libzimg --disable-libjack --disable-indev=jack --enable-videotoolbox --enable-audiotoolbox --enable-neon
+  libavutil      60.  8.100 / 60.  8.100
+  libavcodec     62. 11.100 / 62. 11.100
+  libavformat    62.  3.100 / 62.  3.100
+  libavdevice    62.  1.100 / 62.  1.100
+  libavfilter    11.  4.100 / 11.  4.100
+  libswscale      9.  1.100 /  9.  1.100
+  libswresample   6.  1.100 /  6.  1.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'jobs/1b1063e4-388d-4d38-af15-7bbe6e0ac121/77014.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42isom
+  Duration: 00:00:20.35, start: 0.000000, bitrate: 1624 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 478x850, 1494 kb/s, 30 fps, 30 tbr, 90k tbn (default)
+    Metadata:
+      vendor_id       : [0][0][0][0]
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      vendor_id       : [0][0][0][0]
+Input #1, image2, from 'jobs/1b1063e4-388d-4d38-af15-7bbe6e0ac121/overlay_1764389853188_1.jpeg':
+  Duration: 00:00:00.04, start: 0.000000, bitrate: 46508 kb/s
+  Stream #1:0: Video: mjpeg (Baseline), yuvj420p(pc, bt470bg/unknown/unknown), 1280x904 [SAR 96:96 DAR 160:113], 25 fps, 25 tbr, 25 tbn
+Input #2, mov,mp4,m4a,3gp,3g2,mj2, from 'jobs/1b1063e4-388d-4d38-af15-7bbe6e0ac121/overlay_1764389853188_2.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: isommp42
+    creation_time   : 2025-11-25T04:48:50.000000Z
+    com.android.version: 15
+    com.android.capture.fps: 30.000000
+  Duration: 00:00:15.81, start: 0.000000, bitrate: 10298 kb/s
+  Stream #2:0[0x1](eng): Video: hevc (Main) (hvc1 / 0x31637668), yuvj420p(pc, bt470bg/bt470bg/smpte170m), 1280x720, 9528 kb/s, 29.99 fps, 30 tbr, 90k tbn, start 0.007800 (default)
+    Metadata:
+      creation_time   : 2025-11-25T04:48:50.000000Z
+      handler_name    : VideoHandle
+      vendor_id       : [0][0][0][0]
+    Side data:
+      displaymatrix: rotation of -90.00 degrees
+  Stream #2:1[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 256 kb/s (default)
+    Metadata:
+      creation_time   : 2025-11-25T04:48:50.000000Z
+      handler_name    : SoundHandle
+      vendor_id       : [0][0][0][0]
+Input #3, image2, from 'jobs/1b1063e4-388d-4d38-af15-7bbe6e0ac121/overlay_1764389853188_3.jpeg':
+  Duration: 00:00:00.04, start: 0.000000, bitrate: 55329 kb/s
+  Stream #3:0: Video: mjpeg (Baseline), yuvj420p(pc, bt470bg/unknown/unknown), 1280x800 [SAR 96:96 DAR 8:5], 25 fps, 25 tbr, 25 tbn
+Stream mapping:
+  Stream #0:0 (h264) -> drawtext:default
+  Stream #1:0 (mjpeg) -> scale:default
+  Stream #2:0 (hevc) -> scale:default
+  Stream #3:0 (mjpeg) -> scale:default
+  overlay:default -> Stream #0:0 (libx264)
+  Stream #0:1 -> #0:1 (copy)
+Press [q] to stop, [?] for help
+[swscaler @ 0xabbdb8000] deprecated pixel format used, make sure you did set range correctly
+    Last message repeated 2 times
+[libx264 @ 0xab9338700] using cpu capabilities: ARMv8 NEON DotProd
+[libx264 @ 0xab9338700] profile High, level 3.1, 4:2:0, 8-bit
+[libx264 @ 0xab9338700] 264 - core 165 r3222 b35605a - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=1 ref=2 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=6 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=12 lookahead_threads=2 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=1 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=30 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'jobs/1b1063e4-388d-4d38-af15-7bbe6e0ac121/rendered.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42isom
+    encoder         : Lavf62.3.100
+  Stream #0:0: Video: h264 (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 478x850, q=2-31, 30 fps, 15360 tbn
+    Metadata:
+      encoder         : Lavc62.11.100 libx264
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+  Stream #0:1(und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      vendor_id       : [0][0][0][0]
+frame=   31 fps=0.0 q=29.0 size=     256KiB time=00:00:00.96 bitrate=2169.9kbits/s speed=1.91x elapsed=0:00:00.50    
+frame=  114 fps=113 q=29.0 size=     768KiB time=00:00:03.73 bitrate=1685.3kbits/s speed=3.71x elapsed=0:00:01.00    
+frame=  203 fps=134 q=29.0 size=    1536KiB time=00:00:06.70 bitrate=1878.1kbits/s speed=4.44x elapsed=0:00:01.51    
+frame=  253 fps=125 q=29.0 size=    2048KiB time=00:00:08.36 bitrate=2005.3kbits/s speed=4.15x elapsed=0:00:02.01    
+frame=  279 fps=111 q=29.0 size=    2304KiB time=00:00:09.23 bitrate=2044.2kbits/s speed=3.67x elapsed=0:00:02.51    
+frame=  302 fps=100 q=29.0 size=    2304KiB time=00:00:10.00 bitrate=1887.5kbits/s speed=3.31x elapsed=0:00:03.02    
+frame=  320 fps= 91 q=29.0 size=    2560KiB time=00:00:10.60 bitrate=1978.5kbits/s speed=3.01x elapsed=0:00:03.52    
+frame=  342 fps= 85 q=29.0 size=    2816KiB time=00:00:11.33 bitrate=2035.5kbits/s speed=2.81x elapsed=0:00:04.03    
+frame=  363 fps= 80 q=29.0 size=    2816KiB time=00:00:12.03 bitrate=1917.1kbits/s speed=2.66x elapsed=0:00:04.53    
+frame=  394 fps= 78 q=29.0 size=    3072KiB time=00:00:13.06 bitrate=1926.0kbits/s speed=2.59x elapsed=0:00:05.03    
+frame=  440 fps= 79 q=29.0 size=    3584KiB time=00:00:14.60 bitrate=2011.0kbits/s speed=2.64x elapsed=0:00:05.54    
+frame=  500 fps= 83 q=29.0 size=    4096KiB time=00:00:16.60 bitrate=2021.4kbits/s speed=2.75x elapsed=0:00:06.04    
+frame=  567 fps= 87 q=29.0 size=    4608KiB time=00:00:18.83 bitrate=2004.4kbits/s speed=2.88x elapsed=0:00:06.55    
+[out#0/mp4 @ 0xab8c60540] video:4704KiB audio:318KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.562838%
+frame=  610 fps= 90 q=-1.0 Lsize=    5050KiB time=00:00:20.26 bitrate=2041.3kbits/s speed=2.99x elapsed=0:00:06.77    
+[libx264 @ 0xab9338700] frame I:3     Avg QP:22.70  size: 55783
+[libx264 @ 0xab9338700] frame P:193   Avg QP:24.75  size: 15652
+[libx264 @ 0xab9338700] frame B:414   Avg QP:29.07  size:  3932
+[libx264 @ 0xab9338700] consecutive B-frames:  5.6%  7.5% 12.8% 74.1%
+[libx264 @ 0xab9338700] mb I  I16..4:  4.3% 63.5% 32.2%
+[libx264 @ 0xab9338700] mb P  I16..4:  2.3% 12.2%  2.0%  P16..4: 32.0% 17.6% 11.4%  0.0%  0.0%    skip:22.6%
+[libx264 @ 0xab9338700] mb B  I16..4:  0.7%  4.6%  0.5%  B16..8: 28.3%  9.0%  1.2%  direct: 7.0%  skip:48.6%  L0:55.4% L1:31.4% BI:13.2%
+[libx264 @ 0xab9338700] 8x8 transform intra:75.4% inter:70.5%
+[libx264 @ 0xab9338700] coded y,uvDC,uvAC intra: 63.9% 79.4% 36.9% inter: 18.6% 13.4% 1.3%
+[libx264 @ 0xab9338700] i16 v,h,dc,p: 33% 32% 12% 23%
+[libx264 @ 0xab9338700] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 23% 23% 14%  4%  7%  7%  7%  8%  7%
+[libx264 @ 0xab9338700] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 25% 22% 13%  5%  8%  7%  8%  6%  6%
+[libx264 @ 0xab9338700] i8c dc,h,v,p: 40% 21% 25% 15%
+[libx264 @ 0xab9338700] Weighted P-Frames: Y:4.1% UV:3.1%
+[libx264 @ 0xab9338700] ref P L0: 84.6% 15.4%
+[libx264 @ 0xab9338700] ref B L0: 94.6%  5.4%
+[libx264 @ 0xab9338700] ref B L1: 99.0%  1.0%
+[libx264 @ 0xab9338700] kb/s:1894.77
