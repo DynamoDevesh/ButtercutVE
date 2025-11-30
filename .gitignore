@@ -1,0 +1,36 @@
+# Node / Expo
+node_modules/
+.expo/
+.expo-shared/
+web-build/
+dist/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Backend runtime / outputs
+jobs/
+*.mp4
+*.mov
+*.mkv
+*.log
+ffmpeg_background.log
+*.sqlite3
+
+# IDE / OS
+.vscode/
+.DS_Store
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Misc
+.env
+.env.local
